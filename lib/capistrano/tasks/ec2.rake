@@ -3,7 +3,7 @@ require 'colorize'
 
 namespace :ec2 do
   desc 'Show matched ec2 instances.'
-  task :list do
+  task :status do
     table = Terminal::Table.new(
       :style => {
         :border_x => "",
