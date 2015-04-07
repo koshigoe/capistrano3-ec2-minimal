@@ -20,12 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
+In Capfile:
+
+```ruby
+require 'capistrano/ec2/minimal'
+```
+
 In config/deploy.rb:
 
 ```ruby
 Rake::Task[fetch(:stage)].enhance do
   ec2_set_servers user: 'ec2-user'
 end
+```
+
+Utility task:
+
+```
+cap <stage> ec2:status
 ```
 
 tag:Project > tag:Stage > running で絞り込んだインスタンスが対象。
