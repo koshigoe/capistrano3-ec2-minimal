@@ -7,3 +7,5 @@ module Capistrano
     end
   end
 end
+
+load File.expand_path("../../../tasks/ec2.rake", __FILE__)
