@@ -9,13 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["koshigoe"]
   spec.email         = ["koshigoeb@gmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
-
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{This is an minimal ec2 support for Capistrano3 using AWS SDK v2. (like cap-ec2) }
+  spec.description   = %q{This is an minimal ec2 support for Capistrano3 using AWS SDK v2. (like cap-ec2) }
+  spec.homepage      = "https://github.com/koshigoe/capistrano3-ec2-minimal"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
