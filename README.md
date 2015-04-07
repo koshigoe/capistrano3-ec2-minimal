@@ -1,8 +1,6 @@
 # Capistrano3::Ec2::Minimal
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/capistrano3/ec2/minimal`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+AWS SDK v2 を使って [forward3d/cap-ec2](https://github.com/forward3d/cap-ec2) の最小限の機能を実装する。
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In config/deploy.rb:
+
+```ruby
+Rake::Task[fetch(:stage)].enhance do
+  ec2_set_servers user: 'ec2-user'
+end
+```
 
 ## Development
 
