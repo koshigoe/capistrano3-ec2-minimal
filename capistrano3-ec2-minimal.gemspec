@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'capistrano3/ec2/minimal/version'
+require 'capistrano/ec2/minimal/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano3-ec2-minimal"
