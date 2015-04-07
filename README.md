@@ -28,6 +28,11 @@ Rake::Task[fetch(:stage)].enhance do
 end
 ```
 
+tag:Project > tag:Stage > running で絞り込んだインスタンスが対象。
+roles は tag:Roles (カンマ区切りで複数指定可) から読み取って設定される。
+
+※ 注) cap-ec2 では tag:Stages と複数前提だが、ここでは tag:Stage で単一指定としている。
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
