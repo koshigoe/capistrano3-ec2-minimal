@@ -5,7 +5,7 @@ require 'capistrano3/ec2/minimal/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano3-ec2-minimal"
-  spec.version       = Capistrano3::Ec2::Minimal::VERSION
+  spec.version       = Capistrano::Ec2::Minimal::VERSION
   spec.authors       = ["koshigoe"]
   spec.email         = ["koshigoeb@gmail.com"]
 
