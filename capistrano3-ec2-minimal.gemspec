@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This is an minimal ec2 support for Capistrano3 using AWS SDK v2. (like cap-ec2) }
   spec.description   = %q{This is an minimal ec2 support for Capistrano3 using AWS SDK v2. (like cap-ec2) }
-  spec.homepage      = "https://github.com/koshigoe/capistrano3-ec2-minimal"
+  spec.homepage      = "https://github.com/feedforce/capistrano3-ec2-minimal"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
